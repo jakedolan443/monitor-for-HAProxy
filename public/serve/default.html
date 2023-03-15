@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Monitor For HAProxy</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/js/login.js" defer></script>
+    <script src="/js/interface.js" defer></script>
+    <script src="/js/cache.js" defer></script>
+    <script src="/js/country_codes.js" defer></script>
+    <script src="/js/format.js" defer></script>
+    <script src="/js/tablehandler.js" defer></script>
+    <script src="/js/data.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</head>
+<body>
+    <div id="login-screen">
+        <div class="container">
+            <h1>Monitor For HAProxy</h1>
+            <h3>Sign in required</h3>
+            <div class="input_fields">
+                <h4>Username</h4>
+                <input id="username_input"></input>
+                <h4>Password</h4>
+                <input id="password_input" type="password"></input>
+                <br>
+                <p id="incorrect_label" style="visibility: hidden; margin-top: -10px; color: red; font-size: 0.85rem;">Login Failed.</p>
+                <button id="login_submit">Login</button>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <a id="link_live" role="button">Live</a>
+        <a id="link_statistics" role="button">Upload</a>
+        <a id="link_history" role="button">History</a>
+        <a id="link_options" class="selected" role="button">Options</a>
+    </div>
+    <div id="content">
+        <div class="tab" id="tab_live">
+            {% include 'live.html' %}
+        </div>
+        <div class="tab" id="tab_statistics">
+            {% include 'null.html' %}
+        </div>
+        <div class="tab" id="tab_history">        
+            {% include 'null.html' %}
+        </div>
+        <div class="tab" id="tab_options">
+            {% include 'null.html' %}
+        </div>
+    </div>
+  
+</body>
+</html>

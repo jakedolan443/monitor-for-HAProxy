@@ -1,0 +1,2 @@
+{"username":"admin", "passkey_hash":"69a329523ce1ec88bf63061863d9cb14",
+"fields":{"Time":true, "Source_IP":true, "Source_Port":false, "Source_Country":true, "Source_Region":true, "Source_City":true, "Source_Latitude":false, "Source_Longitude":false, "Destination_IP":false, "Destination_Port":false, "HTTP_Method":false, "HTTP_Request_URI":true, "Status_Code":false, "Backend":false, "Frontend":false, "ID":false}, "formats":{"Time":"Jan-01, 12:30:00", "Source_Country":"name", "Destination":0}}
